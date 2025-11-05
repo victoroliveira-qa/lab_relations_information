@@ -1,0 +1,8 @@
+openai
+google-generativeai
+google-genai
+python-dotenv
+gemini
+pandas
+PyPDF2
+faiss
