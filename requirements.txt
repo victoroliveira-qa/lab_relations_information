@@ -6,3 +6,4 @@ gemini
 pandas
 PyPDF2
 faiss
+sentence-transformers
