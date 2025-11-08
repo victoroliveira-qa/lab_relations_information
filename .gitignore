@@ -2,3 +2,5 @@
 .idea
 data
 resultados
+src/__pycache__/
+output/

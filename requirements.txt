@@ -1,9 +1,4 @@
-openai
+streamlit
 google-generativeai
-google-genai
-python-dotenv
-gemini
-pandas
-PyPDF2
-faiss
-sentence-transformers
+PyMuPDF
+rank_bm25
