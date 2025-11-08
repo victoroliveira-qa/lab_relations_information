@@ -1,42 +1,31 @@
-🧠 Projeto de Mestrado — Integração com APIs de IA (GPT & Gemini)
+🧠 Extração de Informações em PDF Financeiros — Usando RAG e APIs de IA (Gemini)
 
-Este repositório contém a estrutura e os scripts utilizados para explorar e aplicar modelos de IA generativa (como GPT e Gemini) no contexto do Mestrado em Informática Aplicada.
+Este repositório contém a estrutura e os scripts utilizados para explorar e aplicar modelos de IA generativa (Gemini) no contexto do Mestrado em Informática Aplicada.
 O projeto está organizado em módulos para facilitar:
 
-* Chamadas básicas às APIs
-* Chamadas com dados locais (arquivos)
-* Chamadas específicas relacionadas à pesquisa de mestrado (extração de relações, processamento textual, geração de resumos, etc.)
-
+* Leitura de PDF com RAG
+* Interface gráfica usando Streamlit
+* Consulta e validação de dados usando o Gemini.
 ---
 ## 👥 Integrantes
 
-* **Victor Henrique dos Santos Oliveira**
+* **Camila Nunes**
+* **Guilherme Silva**
+* **Mariana Xavier**
+* **Rodrigo Brochardt**
+* **Victor Oliveira**
 ---
 ## 📌 Pastas principais:
 
-* src/config → Configuração de chaves de API e variáveis de ambiente.
-* src/clients → Clientes de integração com GPT (OpenAI) e Gemini (Google).
-* src/chamadas_basicas → Exemplos simples de prompts e respostas para aprendizado.
-* src/chamadas_com_arquivos → Exemplos de uso das APIs com dados locais (CSV, TXT etc).
-* src/chamadas_trabalho → Scripts utilizados nas etapas da pesquisa de mestrado (processamento, extração, análise, etc).
----
-## 🤖 Como Rodar os Exemplos
+* src/exporter.py → Função para realizar a exportação para o csv.
+* src/llm_client.py → Clientes de integração com Gemini (Google).
+* src/pdf_processor.py → Realiza o processamento de leitura dos PDF.
+* src/rag_core.py → Realiza o processamento do PDF para consulta usando o Gemini.
 
-* Deve acessar a pasta raiz do projeto.
-
-📌 Exemplo de chamada básica ao GPT / Gemini
-* python -m projeto_gemini.chamada_gemini_basica
-
-📌 Exemplo de chamada ao GPT com CSV
-* python -m projeto_gemini.chamada_gemini_basica
-
-📌 Exemplo de extração de relações (Mestrado)
-*  python -m projeto_gemini.chamada_gemini_basica
 ---
 ## 📌 Modelos Utilizados
 
-* [**OpenAI GPT-5**](https://platform.openai.com/docs/models/gpt-5)
-* [**Gemini 2.5 Flash**](https://ai.google.dev/gemini-api/docs/quickstart?hl=pt-br#python)
+* [**gemini-2.0-flash-lite**](https://ai.google.dev/gemini-api/docs/quickstart?hl=pt-br#python)
 
 ## 🛠️ Configuração do Ambiente
 
@@ -46,5 +35,4 @@ O projeto está organizado em módulos para facilitar:
 
 📌 Configurar variáveis de ambiente
 * Crie um arquivo .env na raiz com o seguinte conteúdo:
-* OPENAI_API_KEY=sua_chave_openai_aqui
 * GEMINI_API_KEY=sua_chave_gemini_aqui
