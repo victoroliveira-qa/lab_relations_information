@@ -57,7 +57,7 @@ def gerar_resposta_com_gemini(query, contexto):
     """
 
     try:
-        model = genai.GenerativeModel('gemini-2.0-flash-lite')
+        model = genai.GenerativeModel('gemini-2.5-flash')
         response = model.generate_content(prompt)
         return response.text
     except Exception as e:
